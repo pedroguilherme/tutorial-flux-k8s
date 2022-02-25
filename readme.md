@@ -5,9 +5,9 @@ Instalação e configuração da automação de Deploy dos manifestos no k8s
 Nesse passo a passo utilizamos o flux cli e kubectl para realizar a criação e monitoramento dos manifestos dentro do
 cluster kubernetes.
 
-1. [Configuração do ambiente (AZ / Kubectl / Flux)](#configurao-do-ambiente-az--kubectl--flux)
-2. [Sincronização automática dos arquivos de manifestos](#sincronizao-automtica-dos-arquivos-de-manifestos)
-3. [Automação para deploy de versão de containers](#automao-para-deploy-de-verso-de-containers)
+1. [Configuração do ambiente (AZ / Kubectl / Flux)](#configuração-do-ambiente-az--kubectl--flux)
+2. [Sincronização automática dos arquivos de manifestos](#sincronização-automática-dos-arquivos-de-manifestos)
+3. [Automação para deploy de versão de containers](#automação-para-deploy-de-versão-de-containers)
 
 ## Configuração do ambiente (AZ / Kubectl / Flux)
 
