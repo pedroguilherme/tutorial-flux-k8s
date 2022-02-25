@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-meu-app
+  namespace: meu-app-testing
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: meu-app
+  template:
+    metadata:
+      name: pod-meu-app
+      labels:
+        app: meu-app
+    spec:
+      containers:
+      - name: docker-meu-app
+        image: meu-app.azurecr.io/meu-app-testing:v1.0.2-beta # {"$imagepolicy": "meu-app-testing:meu-app-testing"}
+        ports:
+          - containerPort: 3000
+      imagePullSecrets:
+      - name: azure-meu-app-registry.secret
