@@ -1,4 +1,4 @@
-# Kubernetes com Flux CD - Automation AZURE AKS
+# Kubernetes com Flux CD - Automation AZURE AKS (Flux version 0.27)
 
 Instalação e configuração da automação de Deploy dos manifestos no k8s
 
@@ -62,7 +62,7 @@ Requisitos:
     * Caso não tenha crie uma pasta chamada flux-system
 2. Inicie o flux com o comando:
    > ```shell
-   > flux install --export ./flux-system/gotk-components.yaml
+   > flux install --export > ./flux-system/gotk-components.yaml
    > ```
    > Com isso será criado um arquivo gotk-components.yaml dentro da pasta flux-system, esse arquivo irá conter todos os recursos necessários para o flux realizar as operações.
 3. Aplique a configuração do flux no cluster
